@@ -18,6 +18,7 @@
     05 - Calcular a distancia tirando a raiz quadrada da soma do resultado
          do passo 03 e 04;
     06 - Exibir para o usuário a disntacia calculada
+    07 - Fim
 */
 
 int px1, py1, px2, py2;

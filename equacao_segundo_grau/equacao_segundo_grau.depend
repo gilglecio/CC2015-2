@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1441218277 source:/var/www/CC/equacao_segundo_grau/main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+

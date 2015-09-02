@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1441212655 source:/var/www/CC/distancia_entre_dois_pontos_no_plano/main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+

@@ -150,7 +150,7 @@ int main()
 
                 if (total_pessoas > 0) {
 
-                    printf("LISTA DAS PESSOAS CADASTRADAS (%d):\n\n", total_pessoas);
+                    printf("%d - PESSOAS CADASTRADAS:\n", total_pessoas);
 
                     int i;
 

@@ -97,7 +97,7 @@ void exibir_vendedor(struct vendedor vendedor, int id) {
     divisor();
 }
 
-void bublesort(struct vendedor vetor[]) {
+struct vendedor * bublesort(struct vendedor vetor[]) {
     
     int i, j, tamanho;
 
@@ -105,13 +105,16 @@ void bublesort(struct vendedor vetor[]) {
     
     for (i = 0; i < (tamanho -1); i++) {
         for (j=0; j < (tamanho -(i +1)); j++) {
-            if( vetor[j] > vetor[j+1]) {
-                int temporario = vetor[j];
+            if( vetor[j].codigo_vendedor > vetor[j+1].codigo_vendedor) {
+                struct vendedor temporario;
+                temporario = vetor[j];
                 vetor[j] = vetor[j+1];
                 vetor[j+1] = temporario;
             }
         } 
     }
+
+    return vetor;
 }
 
 void vendedor() {
@@ -164,7 +167,7 @@ int main()
 
                     int i;
 
-                    bublesort(&vendedores);
+                    //struct vendedor * vendedores = bublesort(vendedores);
 
                     for(i = 0; i < total_vendedores; i++) {
                         exibir_vendedor(vendedores[i], i);
